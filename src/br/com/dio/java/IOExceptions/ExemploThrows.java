@@ -1,15 +1,14 @@
-package br.com.dio.java.io.IOException;
+package br.com.dio.java.IOExceptions;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
 public class ExemploThrows {
-
     public static void recebeStream(String nomeArquivo) throws IOException { //método não trata exceptions, ele lança.
         FileReader fr = new FileReader(nomeArquivo); //FileReader pede um try-catch ou throws. Usamos throws
         System.out.println("Stream recebido com sucesso! " + nomeArquivo);
+        //rotina aqui no meio...
         fr.close(); //fechamos o stream.
     }
 

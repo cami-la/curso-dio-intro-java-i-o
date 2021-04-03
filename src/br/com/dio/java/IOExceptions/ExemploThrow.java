@@ -1,4 +1,4 @@
-package br.com.dio.java.io.IOException;
+package br.com.dio.java.IOExceptions;
 
 import java.io.*;
 

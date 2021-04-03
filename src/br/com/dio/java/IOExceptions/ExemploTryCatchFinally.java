@@ -1,4 +1,4 @@
-package br.com.dio.java.io.IOException;
+package br.com.dio.java.IOExceptions;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -24,7 +24,7 @@ public class ExemploTryCatchFinally {
             System.out.println("Arquivo não encontrado, motivo: " + e.getCause()); //mostra a causa
             System.out.println("Por gentileza, confira se o arquivo existe " + e.getMessage()); //mostra o nome
             //e.printStackTrace();
-        } catch (IOException | NullPointerException e) { //caso o stream fosse impedido de ser fechado
+        } catch (IOException | NullPointerException e) { //caso o stream estivesse aberto, mas impedido de ser fechado
             System.out.println("Arquivo não pode ser fechado!" + e.getCause()); //mostra a causa
         } finally { //(opcional)
             System.out.println("A execução do finally independe se apresentou exception ou não!");

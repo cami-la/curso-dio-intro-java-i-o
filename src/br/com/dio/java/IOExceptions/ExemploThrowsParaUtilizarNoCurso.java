@@ -1,4 +1,4 @@
-package br.com.dio.java.io.IOException;
+package br.com.dio.java.IOExceptions;
 
 import java.io.File;
 import java.io.FileReader;
@@ -16,7 +16,8 @@ public class ExemploThrowsParaUtilizarNoCurso {
         //rotina aqui no meio...
         fr.close(); //fechamos a stream.
 
-        fr = new FileReader(f1.getName()); //esse arquivo não existe, logo o try é interrompido e vai para o catch.
+        fr = new FileReader(f1.getName()); //esse arquivo não existe, o programa encerra aqui e mostra no console.
+        //daqui pra frente nada mais acontece
         System.out.println("Stream recebido com sucesso! " + f.getName());
         //rotina aqui no meio...
         fr.close(); //fechamos a stream
