@@ -1,0 +1,13 @@
+Independente da origem ou destino dos dados, o processo de leitura (input) e escrita (output) de dados são os mesmos:
+
+- Leitura (read)
+1. Abre um Stream
+2. while(existe_informação)
+2.1 lê_informação
+3. Fecha a Stream
+
+- Escrita (write)
+1. Abre um Stream
+2. while(existe_informação)
+2.1 escreve_informação
+3. Fecha a Stream
