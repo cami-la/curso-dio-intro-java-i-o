@@ -1,4 +1,4 @@
-package br.com.dio.java.IOExceptions;
+package br.com.dio.java.io.IOExceptions;
 
 import java.io.File;
 import java.io.FileReader;
@@ -24,4 +24,6 @@ public class ExemploThrowsParaUtilizarNoCurso {
 
         System.out.println("Apresentando qualquer erro antes dessa linha, a mesma nunca será lida.");
     }
+
+   
 }
