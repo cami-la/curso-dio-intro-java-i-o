@@ -2,7 +2,8 @@ package br.com.dio.java.io.IOCharacter;
 
 import java.io.*;
 
-public class Exercicio1Comentado {
+//Abra o teclado para escrever 3 filmes/séries que você recomendaria e exiba esses filmes/séries no console.
+public class Exercicio1IOCaracterComentado {
     public static void abrirTecladoExibirConsole() throws IOException { //throws declarado para não tratar agora.
         //abrindo teclado
         InputStream is = System.in; //abrindo um fluxo de dados para receber entrada através do teclado
