@@ -47,19 +47,24 @@ public class Exercicio3IOCaracterComentado {
 
     public static void adicionarInformacoesArquivoJaExistente(String arquivoCopy) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        //padrão decorator para ler (input) do teclado.
 
         BufferedWriter bw = new BufferedWriter(new FileWriter(arquivoCopy, true));
+        //padrão decorator para escrever (output) no arquivo sem apagar o conteúdo que já existia.
 
         String line = br.readLine();
-        do{
-            bw.write(line);
-            bw.newLine();
-            line = br.readLine();
-        } while (!line.equalsIgnoreCase("fim"));
+        do { //faça
+            bw.write(line); //escreva no buffer interno a linha capturada pelo scanner
+            bw.newLine(); //pule para próxima linha no buffer
+            line = br.readLine(); //pegue a proxima linha do teclado
+        } while(!line.equalsIgnoreCase("fim"));
+        //repita as operações do laço do-while. Quando digitar a palavra 'fim', pare.
+        bw.flush(); //terminado o laço, descarrege as informações capturadas pelo teclado no arquivo recomendacoes.txt
+        //(neste caso não precisaria do método flush já que em seguida fechamos o fluxo: bw.close())
 
         //fechando todos os fluxos
-        br.close();
-        bw.close();
+        br.close(); //fechamos o fluxo de entrada
+        bw.close(); //fechamos o fluxo de saída para escrita no documento
     }
 
     public static void main(String[] args) throws IOException {

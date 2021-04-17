@@ -10,7 +10,7 @@ public class Exercicio1IOCaracter {
         Reader isr = new InputStreamReader(is);
         BufferedReader bw = new BufferedReader(isr);*/
 
-        System.out.println("Digite 3 sugestões de filmes ou séries: ");
+        System.out.println("Digite 3 sugestões de filmes: ");
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String line = br.readLine();
 
@@ -24,7 +24,7 @@ public class Exercicio1IOCaracter {
             bw.write(line);
             bw.newLine();
             line = br.readLine();
-        } while(!line.equalsIgnoreCase("fim"));
+        } while(!line.isEmpty());
         bw.flush();
 
         br.close();
