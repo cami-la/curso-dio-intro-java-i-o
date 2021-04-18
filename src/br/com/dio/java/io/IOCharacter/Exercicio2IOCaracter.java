@@ -3,7 +3,7 @@ package br.com.dio.java.io.IOCharacter;
 import java.io.*;
 import java.util.Scanner;
 
-//Abra o teclado para escrever 3 filmes/séries que você recomendaria e armazene em “recomendacoes.txt”.
+//Abra o teclado para escrever 3 filmes que você recomendaria e armazene em “recomendacoes.txt”.
 public class Exercicio2IOCaracter {
     public static void lerTecladoImprimirDocumento() throws IOException {
 

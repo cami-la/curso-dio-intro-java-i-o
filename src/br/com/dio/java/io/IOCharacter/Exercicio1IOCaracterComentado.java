@@ -2,7 +2,7 @@ package br.com.dio.java.io.IOCharacter;
 
 import java.io.*;
 
-//Abra o teclado para escrever 3 filmes que você recomendaria e exiba esses filmes/séries no console.
+//Abra o teclado para escrever 3 filmes que você recomendaria e exiba esses filmes no console.
 public class Exercicio1IOCaracterComentado {
     public static void abrirTecladoExibirConsole() throws IOException { //throws declarado para não tratar agora.
         System.out.println("Digite 3 sugestões de filmes ou séries: ");
