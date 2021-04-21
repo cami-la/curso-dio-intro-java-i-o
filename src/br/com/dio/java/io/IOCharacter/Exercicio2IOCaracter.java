@@ -5,36 +5,38 @@ import java.util.Scanner;
 
 //Abra o teclado para escrever 3 filmes que você recomendaria e armazene em “recomendacoes.txt”.
 public class Exercicio2IOCaracter {
-    public static void lerTecladoImprimirDocumento() throws IOException {
+
+    public static void lerTecladoEscreverDocumento() throws IOException {
 
         PrintWriter pw = new PrintWriter(System.out);
-        pw.println("Recomende 3 filmes e para finalizar digite 'fim': ");
+        pw.println("Digite 3 recomendações de filmes: ");
         pw.flush();
 
-        Scanner scanner = new Scanner(System.in);
-        String line = scanner.nextLine();
+        Scanner scan = new Scanner(System.in);
+        String line = scan.nextLine();
 
         File f = new File("recomendacoes.txt");
 
         BufferedWriter bw = new BufferedWriter(new FileWriter(f.getName()));
 
-        do{
+        do {
             bw.write(line);
             bw.newLine();
-            line = scanner.nextLine();
-        }while(!line.equalsIgnoreCase("fim"));
-        bw.flush();
+            bw.flush();
+            line = scan.nextLine();
+        } while(!(line.equalsIgnoreCase("fim")));
 
-        pw.printf("Tudo certo! Arquivo '%s' foi criado com tamanho '%d' bytes.", f.getName(), f.length());
-        pw.flush();
+        pw.printf("Arquivo \"%s\" foi criado com sucesso!", f.getName());
+        //pw.flush();
 
         pw.close();
-        scanner.close();
+        scan.close();
         bw.close();
 
     }
 
     public static void main(String[] args) throws IOException {
-        lerTecladoImprimirDocumento();
+        lerTecladoEscreverDocumento();
     }
+
 }
