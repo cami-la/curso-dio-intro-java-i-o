@@ -5,7 +5,7 @@ import java.io.*;
 //Abra o teclado para escrever 3 filmes que você recomendaria e exiba esses filmes no console.
 public class Exercicio1IOCaracterComentado {
     public static void abrirTecladoExibirConsole() throws IOException { //throws declarado para não tratar agora.
-        System.out.println("Digite 3 sugestões de filmes ou séries: ");
+        System.out.println("Digite 3 sugestões de filmes: ");
 
         //abrindo teclado
         InputStream is = System.in; //abrindo um fluxo de dados para receber entrada através do teclado
