@@ -2,6 +2,9 @@ package br.com.dio.java.io.IOBytes.IOObject;
 
 import java.io.*;
 
+//Crie a classe Gato com os atributos nome, idade e cor:
+//Instancie um objeto e serialize
+//Desserialize este objeto e mostre no console
 public class ExemploIOObjectComentado {
     public static void serealizarObjeto() {
         File f = new File("gato"); //representação do documento
@@ -69,6 +72,6 @@ public class ExemploIOObjectComentado {
 
         public static void main (String[]args){
             serealizarObjeto();
-            desserializarObjeto("/home/cami/git/curso-dio-intro-java-io/gato");
+            //desserializarObjeto("/home/cami/git/curso-dio-intro-java-io/gato");
         }
 }
